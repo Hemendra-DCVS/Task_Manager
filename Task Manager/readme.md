@@ -34,3 +34,46 @@ View your tasks in a clean and organized list.
 -Github : https://github.com/Hemendra-DCVS
 
 -Email : hemendrachanti@gmail.com
+
+
+
+
+
+
++------------------------+        +----------------------+
+|       Patient          |        |        Doctor        |
+|------------------------|        |----------------------|
+| Aadhaar No. (PK)       |1---M   | Doctor ID (PK)       |
+| First Name             |        | First Name           |
+| Last Name              |        | Last Name            |
+| DOB                    |        | Years of Experience  |
+| Contact Number         |        | Type (e.g., Cardiologist)|
+| Gender                 |        | Contact Number       |
++------------------------+        +----------------------+
+         |                            |
+         |                            |
+         |                            |
+         |                            |
+         M                            M
++------------------------+        +----------------------+
+|     Appointment        |        |  Prescription Slip   |
+|------------------------|        |----------------------|
+| Appointment ID (PK)    |1---M   | Slip Number (PK)     |
+| Patient Aadhaar No. (FK)|        | Prescription Date    |
+| Doctor ID (FK)         |        | Doctor ID (FK)       |
+| Appointment Date       |        | Patient Aadhaar No. (FK) |
++------------------------+        +----------------------+
+         |
+         |
+         |
+         |
+         M
++------------------------+
+|       Medicine         |
+|------------------------|
+| Medicine ID (PK)      |
+| Type                  |
+| Price                 |
+| Quantity              |
+| Expiration Date       |
++------------------------+
