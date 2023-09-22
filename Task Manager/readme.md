@@ -40,16 +40,18 @@ View your tasks in a clean and organized list.
 
 
 
+
+
 +------------------------+        +----------------------+
 |       Patient          |        |        Doctor        |
 |------------------------|        |----------------------|
-| Aadhaar No. (PK)       |1---M   | Doctor ID (PK)       |
+| Aadhaar No. (PK)       | 1---M  | Doctor ID (PK)       |
 | First Name             |        | First Name           |
 | Last Name              |        | Last Name            |
 | DOB                    |        | Years of Experience  |
 | Contact Number         |        | Type (e.g., Cardiologist)|
 | Gender                 |        | Contact Number       |
-+------------------------+        +----------------------+
+      
          |                            |
          |                            |
          |                            |
@@ -58,11 +60,11 @@ View your tasks in a clean and organized list.
 +------------------------+        +----------------------+
 |     Appointment        |        |  Prescription Slip   |
 |------------------------|        |----------------------|
-| Appointment ID (PK)    |1---M   | Slip Number (PK)     |
-| Patient Aadhaar No. (FK)|        | Prescription Date    |
+| Appointment ID (PK)    | 1---M  | Slip Number (PK)     |
+| Patient Aadhaar No.    |        | Prescription Date    |
 | Doctor ID (FK)         |        | Doctor ID (FK)       |
 | Appointment Date       |        | Patient Aadhaar No. (FK) |
-+------------------------+        +----------------------+
+   
          |
          |
          |
@@ -76,4 +78,4 @@ View your tasks in a clean and organized list.
 | Price                 |
 | Quantity              |
 | Expiration Date       |
-+------------------------+
+
