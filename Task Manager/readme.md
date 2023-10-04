@@ -34,6 +34,3 @@ View your tasks in a clean and organized list.
 -Github : https://github.com/Hemendra-DCVS
 
 -Email : hemendrachanti@gmail.com
-
-
-
